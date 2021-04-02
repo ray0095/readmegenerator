@@ -15,40 +15,51 @@ const prompts = () => {
             },
             {
             type: 'input',
-            message: 'What are your hobbies?',
-            name: 'hobby',
+            message: 'What are the step by step instructions on how a user would install your application?',
+            name: 'install',
             },
             {
                 type: 'input',
-                message: 'What is your favorite food?',
-                name: 'food',
+                message: 'How does a user use your application?',
+                name: 'use',
             },
             {
                 type: 'input',
-                message: 'Enter your GitHub username:',
-                name: 'username',
+                message: 'Please list any resources or collaborators',
+                name: 'credits',
             },
-            {
-                type: 'input',
-                message: 'What is your LinkedIn url?',
-                name: 'linkedin',
-            },
+            // {
+            //     type: 'list',
+            //     choices: [ "Choice A", new inquirer.Separator(), "choice B" ]
+            //     message: 'What is your LinkedIn url?',
+            //     name: 'license',
+            // },
         ])
 }
   const createMD = (response) =>
    `# ${response.name} 
+
    ## Description
     ${response.description}
+
     ##Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [Credits](#credits)
-    - License](#license)
-    My hobbies are ${response.hobby}
-    My favorite food is ${response.food}
-    My GitHub username is ${response.username}
-    My LinkedIn url is ${response.linkedin}
-    `;
+    - [License](#license)
+
+    ##Installation
+    ${response.install}
+
+    ##Usage
+    ${response.use}
+
+    ##Credits
+    Special shoutout to ${response.credits} for helping to me to make this application!`
+
+    // ##License
+    // ${response.license}
+    //;
 const init = () => {
     prompts()
     .then((response) => fs.writeFile('README.md', createMD(response), (err) =>
