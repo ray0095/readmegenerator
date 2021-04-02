@@ -51,7 +51,7 @@ const prompts = () => {
     `;
 const init = () => {
     prompts()
-    .then((response) => fs.writeFile('reademe.md', createMD(response), (err) =>
+    .then((response) => fs.writeFile('README.md', createMD(response), (err) =>
     err ? console.error(err) : console.log('Success!')));
 }
 init();
