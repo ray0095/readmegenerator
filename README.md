@@ -1,19 +1,19 @@
-# ReadMe 
+# ReadMe Generator 
 
-   ## Description
-    Builds a ReadMe
+## Description
+    Creates a ReadMe
 
-    ##Table of Contents
+## Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [Credits](#credits)
     - [License](#license)
 
-    ##Installation
-    Fork it
+## Installation
+    Fork It
 
-    ##Usage
+## Usage
     Use it
 
-    ##Credits
-    Special shoutout to me,myself,and I for helping to me to make this application!
+## Credits
+    Special shoutout to Me for helping to me to make this application!
