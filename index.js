@@ -5,13 +5,13 @@ const prompts = () => {
         .prompt([
             {
             type: 'input',
-            message: 'What is your user name?',
+            message: 'What is your project name?',
             name: 'name',
             },
             {
             type: 'input',
-            message: 'Where are you from?',
-            name: 'locaion',
+            message: 'Describe why you built this project and the problems that it solves.',
+            name: 'description',
             },
             {
             type: 'input',
@@ -36,8 +36,14 @@ const prompts = () => {
         ])
 }
   const createMD = (response) =>
-   `My name is ${response.name}
-    I am from ${response.location}
+   `# ${response.name} 
+   ## Description
+    ${response.description}
+    ##Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - License](#license)
     My hobbies are ${response.hobby}
     My favorite food is ${response.food}
     My GitHub username is ${response.username}
