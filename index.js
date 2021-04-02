@@ -37,25 +37,25 @@ const prompts = () => {
         ])
 }
   const createMD = (response) =>
-   `# ${response.name} 
+`# ${response.name} 
 
 ## Description
-    ${response.description}
+${response.description}
 
 ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
-    ${response.install}
+${response.install}
 
 ## Usage
-    ${response.use}
+${response.use}
 
 ## Credits
-    Special shoutout to ${response.credits} for helping to me to make this application!`
+Special shoutout to ${response.credits} for helping to me to make this application!`
 
     // ##License
     // ${response.license}
