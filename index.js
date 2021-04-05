@@ -28,12 +28,12 @@ const prompts = () => {
                 message: 'Please list any resources or collaborators',
                 name: 'credits',
             },
-            // {
-            //     type: 'list',
-            //     choices: [ "Choice A", new inquirer.Separator(), "choice B" ]
-            //     message: 'What is your LinkedIn url?',
-            //     name: 'license',
-            // },
+            {
+                type: 'list',
+                name: 'license',
+                choices: ['MIT', 'Apache', 'GPL', 'BSD'],
+                message: 'Which license would you like to use?',
+              },
         ])
 }
   const createMD = (response) =>
@@ -55,11 +55,11 @@ ${response.install}
 ${response.use}
 
 ## Credits
-Special shoutout to ${response.credits} for helping to me to make this application!`
+Special shoutout to ${response.credits} for helping to me to make this application!
 
-    // ##License
-    // ${response.license}
-    //;
+##License
+${response.license}`;
+
 const init = () => {
     prompts()
     .then((response) => fs.writeFile('README.md', createMD(response), (err) =>
