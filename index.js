@@ -57,7 +57,7 @@ ${response.use}
 ## Credits
 Special shoutout to ${response.credits} for helping to me to make this application!
 
-##License
+## License
 ${response.license}`;
 
 const init = () => {
