@@ -18,5 +18,5 @@ To use the application, the user should open a node terminal and run node index.
 ## Credits
 Special shoutout to Columbia Coding Bootcamp for helping to me to make this application!
 
-##License
+## License
 MIT
