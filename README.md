@@ -14,6 +14,7 @@ The user should fork this repo and open the files locally. The user should be su
 
 ## Usage
 To use the application, the user should open a node terminal and run node index. From there, the user should answer each prompt thoroughly. Once all prompts are answered, the user will have a brand new read me file!
+Watch this video to learn how to use this application: https://drive.google.com/file/d/1bUxZ8KwL3Up7DLnt4NFJowPdlitTc0EI/view?usp=sharing
 
 ## Credits
 Special shoutout to Columbia Coding Bootcamp for helping to me to make this application!
